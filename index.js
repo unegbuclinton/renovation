@@ -91,11 +91,15 @@ const customDonate = () => {
 
 customBtn.addEventListener('click', customDonate);
 
-$('#play').on('click', function (e) {
-  e.preventDefault();
-  $('#player')[0].src += '?autoplay=1';
-  $('#player').show();
-  $('#video-cover').addClass('dis');
-  $('#video-overlay').hide();
-  $('#play').hide();
-});
+(function () {
+  document.getElementById('play').addEventListener('click', (e) => {
+    e.preventDefault();
+    const player = document.getElementById('player');
+    player.src += '?autoplay=1';
+    player.style.display = 'block';
+
+    document.getElementById('video-cover').classList.add('dis');
+    document.getElementById('video-overlay').style.display = 'none';
+    document.getElementById('play').style.display = 'none';
+  });
+})();
