@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Renovation For Generation</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo.png" alt="logo" />
+
+      <button class="donate-btn btn">DONATE</button>
+    </nav>
+    <section id="hero" class="hero ">
+      <div class="info-wrapper">
+        <h1 class="hero-header">Renovations for Generations</h1>
+        <h4 class="hero-sub-head">
+          Support Dar Al-Hijrah’s masjid renovations
+        </h4>
+        <p class="hero-text">
+          We’re aiming to provide a more accessible masjid than ever before.
+          Donate today and help empower our community in the name of Allah
+          (swt).
+        </p>
+        <button class="donate-btn">DONATE</button>
+      </div>
+      <div class="donate-card">
+        <h1>Every Donation Counts</h1>
+        <div class="donate-wrapper">
+          <div class="card-btns">
+            <button class="btn" data-price="50">$50</button>
+            <button class="btn" data-price="250">$250</button>
+            <button class="btn" data-price="500">$500</button>
+          </div>
+          <input
+            type="number"
+            class="custom-donate"
+            placeholder="Custom Amount"
+          />
+          <button id="custom-btn" class="cta-donation-btn">DONATE NOW</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="community layout">
+      <div class="community-mission">
+        <div class="community-info">
+          <h1>
+            A More Accessible Home for Our Community
+            </h1>
+          <p>
+            Our masjid is the heartbeat of our community, it’s where we come together for support, education, empowerment and most importantly, to worship Allah (swt). <br> <br> 
+            These renovations will provide even more space, renewed facilities and increased accessibility so that we can welcome even more members of our community to join us. As part of our efforts to make the masjid more accessible to all, we are building an elevator to help our disabled youth easily access the mosque hassle-free.
+            <br> <br>
+            Your donations will not only help fund these renovations, but will also bring change that will last for generations. 
+            
+          </p>
+          <button class="donate-btn btn">Donate</button>
+        </div>
+        <img src="./images/community-img.png" alt="" />
+      </div>
+    </section>
+
+    <section  class="donation-support">      
+        <h1>Donate to <span>Support Families</span> in Our Community</h1>
+        <div class="donation-cards">
+            <div class="donation-card">
+                <h1>$250</h1>            
+                <button class="btn" data-price="250">DONATE NOW</button>
+            </div>
+            <div class="donation-card">
+                <h1>$500</h1>
+                <button class="btn" data-price="500">DONATE NOW</button>
+            </div>
+            <div class="donation-card">
+                <h1 class="custom">Custom Amount </h1>
+                <button class="btn">DONATE NOW</button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="empowering" class="empowerment">
+        <div class="header-section"> 
+            <h1>Support the Project</h1>
+            <button class="btn">DONATE NOW</button>
+        </div>
+    
+        <div class="video-box">
+            <div id="video-overlay"></div>
+            <img id="video-cover" src="./images/empowerment-img.png" alt="">
+            <iframe id="player" title="YouTube video player"
+              src="https://www.youtube.com/watch?v=rqafRna8oL0" frameborder="0"
+              allowfullscreen></iframe>
+            <button id="play" class="play-btn">
+              <img src="images/play.png" alt="">
+            </button>
+  </div>
+    </section>
+    <footer>
+        <div class="footer-img__container">
+            <img src="./images/footer-logo.png" alt="">
+           <div class="social-icons">
+            <a href="https://www.facebook.com/hijrahva/">
+                <img src="./images/facebook.png" alt="">
+            </a>
+            <a href="https://twitter.com/hijrahva"> 
+                <img src="./images/twitter.png" alt="">
+            </a>
+           <a href="https://www.instagram.com/hijrahva/">
+            <img src="./images/instagram.png" alt="">
+           </a>
+            
+           </div>
+        </div>
+        <p class="footer-text">Allright Reserve ©Al- Hijrah</p>
+        </footer> 
+
+        <div id="modal" class="modal in-active ">
+            <div class="modal-content" id="modal-content">
+              <div class="modal-header">
+                <p class="modal-header">Make a Donation</p>
+                <img src="./images/cancel.png" alt="" id="modal-cancel" class="header-cancel">
+              </div>
+              <div class="modal-text">Earn a Spiritual reward by Providing Assistance</div>
+              <div class="modal-container">
+                <button class="modal-btn" data-price="50">$50</button>
+                <button class="modal-btn" data-price="250">$250</button>
+                <button class="modal-btn" data-price="500">$500</button>
+           
+              </div>
+              <div class="modal-input">
+                <input type="number" class="donation-value" id="donation-value"></input>
+                <input type="number" class="final-amount" value="5" hidden>
+                <div class="gateway-container">
+                  
+                    <div id="card-container" class="text-center">
+                      <button class="donation-pay__btn">Donate</button>
+                    </div>
+                </div>
+                
+              </div>
+             <p class="modal-footer__text">Thank you for your donation</p>
+            </div>
+  <script src="index.js"></script>
+  </body>
+</html>
